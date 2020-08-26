@@ -22,8 +22,8 @@
   <% end %> -->
 
 <%= form_for @user do |f| %>
-  Enter Username: <%= f.text_field :username, placeholder: "ExampleUser" %>
+  Enter Username: <%= f.text_field :username, placeholder: "#{@user.username}" %>
   Enter Password: <%= f.password_field :password, placeholder: "Password" %>
-  Enter Email: <%= f.email_field :email, placeholder: "example@example.com" %>
+  Enter Email: <%= f.email_field :email, placeholder: "#{@user.email}" %>
   <%= f.submit "Submit" %>
 <% end %>
